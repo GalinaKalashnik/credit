@@ -87,18 +87,18 @@
               <p class="discr-form">Введите только целые числа без запятых</p>
               <div class="form-input">
                 <label class="label-sum">Желаемая сумма кредита<em>*</em></label>
-                <input class="sum jast-numb" type="number" min="1" required tabindex="1">
+                <input class="sum jast-numb" type="number" min="1" id="credit-amount" tabindex="1">
                 <span>евро</span>
               </div>
               <div class="form-input">
                 <label class="label-sum">Ежемесечная ставка</label>
-                <input class="sum jast-numb" type="number" min="1" required tabindex="2">
+                <input class="sum jast-numb" type="number" min="1" id="monthly-rate" tabindex="2">
                 <span>евро</span>
               </div>
               <div class="form-input form-input-or">
                 <span id="or">или</span>
                 <label class="label-years">Срок погашения</label>
-                <input class="years jast-numb" type="number" min="1" required tabindex="3">
+                <input class="years jast-numb" type="number" min="1" id="time" tabindex="3">
                 <span>лет</span>
               </div>
             </div>
@@ -106,9 +106,11 @@
               <div class="offer">
                 <p class="step-header">Наше предложение</p>
                 <p class="offer-name installment">Рассрочка</p>
-                <span class="sum-installment">555 Евро</span>
+                <span class="sum-installment sum-installment-sum">0</span>
+                <span class="sum-installment">Евро</span>
                 <p class="offer-name installment">Окончательная рассрочка/баланс</p>
-                <span class="sum-balance">1000 Евро</span>
+                <span class="sum-balance sum-balance-sum">0</span>
+                <span class="sum-balance">Евро</span>
               </div>
             </div>
           </div>
@@ -148,7 +150,7 @@
   </div>
 
    <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
-   <!--<script type="text/javascript" src="js/script.js"></script>-->
+   <script type="text/javascript" src="js/script.js"></script>
  </body> 
 
  </html>

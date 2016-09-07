@@ -112,6 +112,11 @@ function my_resize() {
 
   }
 
+  var inputs = $('.form input');
+  inputs.keyup(function() {
+    credit_calculator()
+  });
+
   $('.slider').slick({
   dots: false,
   infinite: false,
@@ -153,6 +158,33 @@ $(".jast-numb").keypress(function( b ){
     return !(a==0||a==8||a==9||a==13||c.match(C));
 });
 
+/* credit calculator*/
 
+  /*$('.sum-installment-sum').text("0");
+  $('.sum-balance-sum').text("0");*/
+
+  function credit_calculator() {
+    var a = $('#credit-amount').val();
+    var b = $('#monthly-rate').val();
+    var c = $('#time').val();
+
+    var x = 2;
+    var y = 3;
+
+    if (a && b) {
+      var d = a*b*x;
+      $('.sum-installment-sum').text(d);
+      $('.sum-balance-sum').text("0");
+    }
+    if(a && c) {
+      var e = a*c*y; 
+      $('.sum-balance-sum').text(e);
+      $('.sum-installment-sum').text("0");
+    }
+    /*else {
+      $('.sum-installment-sum').text("0");
+      $('.sum-balance-sum').text("0");
+    }*/
+  }
 
 }

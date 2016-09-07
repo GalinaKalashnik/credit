@@ -163,7 +163,7 @@ nav ul li{
   margin: 18px 0;
 }
 nav ul li:not(:last-child){
-  padding-right: 58px; 
+  padding-right: 57px; 
 }
 nav ul li a{
   color: #fff;
