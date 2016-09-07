@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+   <title>Credit</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700,900" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <link rel="stylesheet" type="text/css" href="css/calculator.css">
+   <link rel="stylesheet" type="text/css" href="css/get-credit.css">
+ </head>
+ 
+ <body>
+
+  <div class="main">
+    <div class="lang">
+      <div class="lang-content">
+        <ul>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+          <li>
+            <a href="javascript:void(0)"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="lang-help">
+      <div class="lang-help-content">
+        <a href="javascript:void(0)">Языковая версия для вашего региона "Русская"</a>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu-content">
+        <div class="logo">
+          <a href="javascript:void(0)" class="logo">
+            <img src="img/logo.png" alt="logo">
+          </a>
+        </div>
+        <nav>
+          <svg class="icon-close" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 47.971 47.971" style="enable-background:new 0 0 47.971 47.971;" xml:space="preserve" width="20px" height="20px" fill="#fff">
+            <g>
+              <path d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88
+              c-1.172-1.172-3.07-1.172-4.242,0c-1.172,1.171-1.172,3.071,0,4.242l18.865,18.864L0.879,42.85c-1.172,1.171-1.172,3.071,0,4.242
+              C1.465,47.677,2.233,47.97,3,47.97s1.535-0.293,2.121-0.879l18.865-18.864L42.85,47.091c0.586,0.586,1.354,0.879,2.121,0.879
+              s1.535-0.293,2.121-0.879c1.172-1.171,1.172-3.071,0-4.242L28.228,23.986z"/>
+            </g>
+          </svg>
+          <ul>
+            <li><a href="javascript:void(0)">Главная</a></li>
+            <li><a href="javascript:void(0)">О компании</a></li>
+            <li><a href="javascript:void(0)">Кредит для физ. лиц</a></li>
+            <li><a href="javascript:void(0)">Кредит для юр. лиц</a></li>
+            <li><a href="javascript:void(0)">Контакты</a></li>
+          </ul>
+        </nav>
+        <svg class="icon-mobi-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 129 129" enable-background="new 0 0 129 129" width="50px" height="50px">
+          <g>
+            <g>
+              <path d="m91.4,33.5h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+              <path d="m91.4,87.4h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+              <path d="m91.4,60.4h-53.8c-2.3,0-4.1,1.8-4.1,4.1 0,2.3 1.8,4.1 4.1,4.1h53.9c2.3,0 4.1-1.8 4.1-4.1-0.1-2.3-1.9-4.1-4.2-4.1z" fill="#FFFFFF"/>
+            </g>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <div class="content">
+      <h2>Заявка на получение кредита</h2>
+        <div class="form">
+          <div class="numbering">
+            <p class="numb">1</p>
+            <p class="numb-header">Кредитные данные</p>
+          </div>
+          <div class="radio-link">
+            <input type="radio" id="radio01" name="radio" />
+            <label for="radio01"><span></span>Кредит для физ. лиц</label>
+          </div>
+          <div class="radio-link">
+            <input type="radio" id="radio02" name="radio" />
+            <label for="radio02"><span></span>Кредит для юр. лиц</label>
+          </div>
+          <p class="discr-form">Введите только целые числа без запятых</p>
+          <div class="form-input first">
+            <label class="label-sum">Желаемая сумма кредита<em>*</em></label>
+            <input class="sum" type="number" min="1" required tabindex="1">
+            <span>евро</span>
+          </div>
+          <div class="form-input last">
+            <label class="label-sum">Ежемесечная ставка</label>
+            <input class="sum" type="number" min="1" required tabindex="2">
+            <span>евро</span>
+          </div>
+          <div class="form-input last">
+            <span class="or">или</span>
+            <label class="label-years"> срок погашения</label>
+            <input class="years" type="number" min="1" required tabindex="3">
+            <span>лет</span>
+          </div>
+
+          <div class="numbering personal-data">
+            <p class="numb">2</p>
+            <p class="numb-header">Личные данные</p>
+          </div>
+          <div class="gender">Ваш пол:</div>
+          <div class="radio-link">
+            <input type="radio" id="gender-radio01" name="gender-radio" />
+            <label for="gender-radio01"><span></span>Мужской</label>
+          </div>
+          <div class="radio-link">
+            <input type="radio" id="gender-radio02" name="gender-radio" />
+            <label for="gender-radio02"><span></span>Женский</label>
+          </div>
+          <div class="string">
+            <div class="form-input">
+              <label class="label-sum">Имя<em>*</em></label>
+              <input class="sum" name="name" type="text" required tabindex="4">
+            </div>
+            <div class="form-input">
+              <label class="label-sum">Название компании</label>
+              <input class="sum" name="name" type="text" required tabindex="5">
+            </div>
+          </div>
+          <div class="string">
+            <div class="form-input">
+              <label class="label-sum">Страна</label>
+              <input class="sum" name="name" type="text" required tabindex="6">
+            </div>
+            <div class="form-input">
+              <label class="label-sum">Почтовый индекс</label>
+              <input class="sum" name="index" type="text" pattern="[0-9]{6}" required tabindex="7">
+            </div>
+            <div class="form-input">
+              <label class="label-sum">Город</label>
+              <input class="sum" name="name" type="text" required tabindex="8">
+            </div>
+          </div>
+
+          <div class="string">
+            <div class="form-input">
+              <label class="label-sum">Стационарный или мобильный <em>*</em></label>
+              <input class="sum" name="phone" type="tel" maxlength="13" required tabindex="9">
+            </div>
+            <div class="form-input">
+              <label class="label-sum">E-mail <em>*</em></label>
+              <input class="sum" type="email" name="email" required tabindex="9">
+            </div>
+          </div>
+
+          <div class="string">
+            <div class="form-input">
+              <label class="label-sum">Повторите адрес электроной почты <em>*</em></label>
+              <input class="sum" type="email" name="email" required tabindex="9">
+            </div>
+          </div>
+          <p class="discr">Политика конфиденциальности</p>
+          <p class="discr-text">Мы храним ваши данные столько, сколько необходимо обработать заявку на получение кредита. Ваши данные не будут переданы третьим лицам, так что вы не будете получать нежелательную рекламу.</p>
+          <p class="discr">Комиссия</p>
+          <p class="discr-text">Вы согласны с тем , что мы будем получать комиссионные за организацию займа в размере 1%.</p>
+          <p class="discr">Комиссия будет списана после выплаты суммы кредита.</p>
+          <a class="button-get" href="javascript:void(0)">Получить кредит</a>
+          <div class="success">
+            <div class="success_svg">
+              <p>Заявка отправлена</p>
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve" preserveAspectRatio="xMidYMid meet">
+                <g>
+                  <circle class="circle" cx="50" cy="49.9999657" r="47.5"/>
+                  <circle class="circle-dash" cx="50" cy="49.9999657" r="47.5"/>
+                  <polyline class="check" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562   "/>
+                  <polyline class="check-dash" points="28.6469955,52.0561066 42.2152748,65.6243896 71.3530045,36.4866562  "/>
+                </g>
+              </svg>
+            </div>
+          </div> 
+        </div>
+   </div>   
+  </div>
+ 
+
+  <div class="footer-menu">
+    <div class="menu-content">
+      <div class="logo">
+        <a href="javascript:void(0)" class="logo">
+        <img src="img/logo.png" alt="logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="javascript:void(0)">Главная</a></li>
+          <li><a href="javascript:void(0)">О компании</a></li>
+          <li><a href="javascript:void(0)">Кредит для физ. лиц</a></li>
+          <li><a href="javascript:void(0)">Кредит для юр. лиц</a></li>
+          <li><a href="javascript:void(0)">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="content">
+      <p class="copyrights">© 2009-2016, все права защищены</p>
+      <ul class="footer-link">
+        <li><a href="javascript:void(0)">AGB</a></li>
+        <li><a href="javascript:void(0)">Impressum</a></li>
+      </ul>
+    </div>
+  </div>
+
+   <script type="text/javascript" src="js/jquery-2.2.1.js"></script>
+   <script type="text/javascript" src="js/script.js"></script>
+ </body> 
+
+ </html>

@@ -1,0 +1,193 @@
+.calculator{
+  top: 145px;
+}
+.main{
+  background: #fff;
+}
+.contacts-main{
+  display: table;
+}
+.contacts-box{
+  display: table-cell;
+  width: 50%;
+}
+.contacts-box:first-child{
+  border-right: 1px solid #c9c9c9;
+}
+.thanks{
+  margin: 35px 0 13px 0;
+  padding-right: 47px;
+}
+.thanks,
+.contacts-main ul li,
+.contacts-main ul li a,
+.schedule,
+.schedule-time{
+  color: #4d4c4c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.contacts-main ul li,
+.contacts-main ul li a,
+.schedule-time{
+  font-weight: 700;
+  line-height: 46px;
+}
+.contacts-main ul{
+  margin-bottom: 29px;
+}
+.contacts-main ul li{
+  padding-left: 54px;
+  position: relative;
+}
+.email:before,
+.phone:before,
+.fax:before{
+  position: absolute;
+  content: '';
+  width: 28px;
+  height: 28px;
+  background: url(../img/sprite.png) no-repeat;
+  top: 8px;
+  left: 3px;
+}
+.email:before{
+  background-position: 0px -220px;  
+}
+.phone:before{
+  background-position: 0px -257px;
+}
+.fax:before{
+  background-position: 0px -294px;
+}
+.schedule-time{
+  padding-left: 52px;
+}
+.schedule{
+  position: relative;
+}
+.schedule:before{
+  position: absolute;
+  content: '';
+  width: 45px;
+  height: 45px;
+  background: url(../img/sprite.png) 0px -332px;
+  top: 58px;
+  left: -4px;
+}
+.form{
+  padding-left: 35px;
+}
+.sum{
+  width: 230px;
+}
+.label-email{
+  padding-right: 25px;
+}
+.your_text{
+  width: 230px;
+  height: 171px;
+  resize: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.label-text{
+  vertical-align: top;
+  margin-right: 90px;
+}
+.button-get{
+  margin: 0 0 130px 279px;
+}
+.success{
+  width: 400px;
+  height: 185px;
+  margin-left: 175px;
+}
+@media screen and (max-width: 1250px){
+  .thanks, .schedule, .schedule-time {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .contacts-main ul li {
+    padding-left: 45px;
+  }
+  .contacts-main ul li, .contacts-main ul li a{
+    font-size: 14px;
+  }
+  .schedule:before {
+    top: 31px;
+  }
+  .form label,
+  .form input,
+  .form textarea{
+    display: block;
+  }
+  .form label{
+    margin-bottom: 15px;
+  }
+  .button-get {
+    margin: 0 0 50px 0;
+  }
+  .success{
+    width: 184px;
+    height: 106px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .calculator.small {
+    top: 81px;
+  }
+  h2{
+    margin: 120px 0 0px;
+  }
+  .contacts-main {
+    display: block;
+  }
+  .contacts-box{
+    display: block;
+    width: 100%;
+  }
+  .contacts-box:first-child{
+    border-right: none;
+  }
+  .form {
+    margin-top: 35px;
+    padding-left: 0;
+  }
+  .form-input input{
+    width: 230px;
+  }
+  .form-input{
+    margin-bottom: 15px;
+  }
+  .button-get{
+    width: 181px;
+    margin: 40px 0 20px 0;
+  }
+  .success{
+    height: 98px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .thanks {
+    padding-right: 0;
+  }
+  .email:before,
+  .phone:before,
+  .fax:before{
+    content: none;
+  }
+  .contacts-main ul li {
+    padding-left: 0;
+  }
+  .contacts-main ul li, .contacts-main ul li a {
+    font-size: 13px;
+  }
+  
+
+}

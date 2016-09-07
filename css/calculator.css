@@ -1,0 +1,251 @@
+.main{
+  background: #fff;
+}
+h2{
+  margin: 150px 0 74px;
+}
+/*left-colom !!!!!!!!!!!!!!!!!!*/
+.form-box{
+  overflow: hidden;
+}
+.left-colom,
+.right-colom{
+  float: left;
+  width: 50%;
+}
+.radio-link{
+  display: inline-block;
+  padding: 5px 0 2px 9px;
+  margin-bottom: 54px;
+}
+.radio-link:not(:last-child){
+  margin-right: 63px;
+}
+.radio-link label{
+  cursor: pointer;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"] + label,
+.form-input label,
+.form-input span,
+.gender,
+.discr{
+  color: #4d4c4c;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+input[type="radio"] + label span{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin: -5px 24px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  position: relative;
+}
+input[type="radio"] + label span:before{
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  border: 2px solid #e2e2e2;
+  border-radius: 50%;
+  top: -7px;
+  left: -7px;
+}
+input[type="radio"] + label span{
+  background-color: transparent;
+}
+input[type="radio"]:checked + label span{
+  background-color: #77cc69;
+}
+input[type="radio"] + label span,
+input[type="radio"]:checked + label span{
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+.discr-form{
+  color: #4d4c4c;
+  font-size: 18px;
+  margin-bottom: 56px;
+}
+.form-input{
+  margin-bottom: 29px;
+}
+.form-input em{
+  color: #d80027;
+}
+.form-input-or{
+  position: relative;
+}
+#or{
+  position: absolute;
+  color: #77cc69;
+  top: -26px;
+  left: 32px;
+}
+.label-sum{
+  padding-right: 31px;
+}
+.sum{
+  width: 228px;
+  height: 46px;
+}
+.sum,
+.years{ 
+  -moz-appearance: textfield;
+}
+.sum::-webkit-inner-spin-button,
+.years::-webkit-inner-spin-button{ 
+  display: none;
+}
+.label-years{
+  padding-right: 30px;
+}
+.years{
+  width: 110px;
+  height: 46px;
+}
+.form-input span{
+  padding-left: 20px;
+}
+.sum,
+.years{
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+/*end  left-colom !!!!!!!!!!!!!!!!!!*/
+
+/*end  right-colom !!!!!!!!!!!!!!!!!!*/
+.offer{
+  width: 370px;
+  border: 2px solid #4571a5;
+  border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+  box-sizing: border-box;
+  margin-left: 14px;
+  text-align: center;
+  padding-bottom: 48px;
+}
+.step-header{
+  margin: 28px 0 38px;
+}
+.offer-name{
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 10px 0;
+}
+.sum-installment,
+.sum-balance{
+  font-size: 28px;
+}
+
+/*end  right-colom !!!!!!!!!!!!!!!!!!*/
+@media screen and (max-width: 1250px){
+  .main .content {
+    padding: 0px 15px 40px 15px;
+  }
+  .radio-link{
+    display: inline-block;
+    padding: 5px 0 6px 9px;
+    margin-bottom: 20px;
+  }
+  input[type="radio"] + label, .form-input label, .form-input span, .gender{
+    font-size: 15px;
+  }
+  .label-sum{
+    padding-right: 10px;
+  }
+  .sum,
+  .years{
+    width: 150px;
+  }
+  .form-input span{
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .left-colom,
+  .right-colom{
+    float: none;
+    width: 100%;
+  }
+  .radio-link{
+    margin-bottom: 20px;
+  }
+  .discr-form {
+    margin-bottom: 28px;
+  }
+  .offer{
+    margin: 0 auto;
+    width: 340px; 
+  }
+
+  .right-colom{
+    margin-bottom: 50px;
+  }
+  .button-get{
+    padding: 18px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .button-get:after{
+    content: none;
+  }
+  .button-get:hover{
+    padding-right: 20px;
+    background: #9de890;
+  }
+}
+
+@media screen and (max-width: 480px){
+  h2{
+    margin: 125px 0 25px;
+  }
+  .radio-link{
+    margin-bottom: 10px;
+    display: block;
+  }
+  .form-input{
+    margin-bottom: 10px;
+  }
+  #or {
+    top: -17px;
+  }
+  .sum,
+  .years{
+    margin: 15px 0;
+    height: 35px;
+  }
+  .offer{
+    width: 270px;
+    padding-bottom: 23px;
+  }
+  .step-header{
+    margin-top: 25px;
+  }
+  .offer-name{
+    margin: 20px 0 10px 0;
+  }
+  .button-get{
+    padding: 6px 20px;
+    width: 230px;
+    line-height: 25px;
+  }
+}
