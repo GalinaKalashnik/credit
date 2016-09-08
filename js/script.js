@@ -1,3 +1,5 @@
+$.fn.exists = function(){return this.length>0;};
+
 $(document).ready(function() {
 
     /*добавление классa для появления success*/
@@ -59,25 +61,31 @@ $(document).ready(function() {
 
 });
 
-function draw_calculator() {
-  if ($(this).scrollTop() > $('.get-credit').offset().top) {
-    $('.calculator').addClass('small');
-    $('.calculator p').addClass('small');
-  }
-  if ($(this).scrollTop() < $('.get-credit').offset().top) {
-    $('.calculator').removeClass('small');
-    $('.calculator p').removeClass('small');
+
+if ($('.calculator').exists()) {
+  function draw_calculator() {
+
+    if ($(this).scrollTop() > $('.get-credit').offset().top) {
+      $('.calculator').addClass('small');
+      $('.calculator p').addClass('small');
+    }
+    if ($(this).scrollTop() < $('.get-credit').offset().top) {
+      $('.calculator').removeClass('small');
+      $('.calculator p').removeClass('small');
+    }
   }
 }
 
 function my_resize() {
   /*calculator !!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   if (window.innerWidth > 1250) { 
+    if ($('.calculator').exists()) {
       draw_calculator();
+      
       $(window).scroll(function() {
         draw_calculator();
-
       });
+    }
   }else{
     $(window).unbind('scroll');
     $('.calculator').addClass('small');
@@ -112,11 +120,9 @@ function my_resize() {
 
   }
 
-  var inputs = $('.form input');
-  inputs.keyup(function() {
-    credit_calculator()
-  });
+  
 
+if ($('.slider').exists()) {
   $('.slider').slick({
   dots: false,
   infinite: false,
@@ -150,15 +156,20 @@ function my_resize() {
     }
   ]
 });
+};
 
-$(".jast-numb").keypress(function( b ){
+/*$(".jast-numb").keypress(function( b ){
     var C = /[1-9\x25\x24\x23]/;
     var a = b.which;
     var c = String.fromCharCode(a);
     return !(a==0||a==8||a==9||a==13||c.match(C));
-});
+});*/
 
 /* credit calculator*/
+var inputs = $('.form input');
+  inputs.keyup(function() {
+    credit_calculator()
+  });
 
   /*$('.sum-installment-sum').text("0");
   $('.sum-balance-sum').text("0");*/
@@ -174,12 +185,12 @@ $(".jast-numb").keypress(function( b ){
     if (a && b) {
       var d = a*b*x;
       $('.sum-installment-sum').text(d);
-      $('.sum-balance-sum').text("0");
+      /*$('.sum-balance-sum').text("0");*/
     }
     if(a && c) {
       var e = a*c*y; 
       $('.sum-balance-sum').text(e);
-      $('.sum-installment-sum').text("0");
+      /*$('.sum-installment-sum').text("0");*/
     }
     /*else {
       $('.sum-installment-sum').text("0");
